@@ -352,10 +352,42 @@ ul {
         display: none;
     }
 
+    #mobile-logo {
+        display: flex;
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        border-bottom: 1px solid grey;
+    }
+
     nav {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin: 2% 0 0 0;
     }
+
+    nav a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 2%;
+        border-bottom: 1px solid grey;
+    }
+
+    h1 {
+        font-size: 50px;
+        margin: 5% 0 2% 10%;
+    }
+
+    .button {
+        margin: 8% 0 12% 18%;
+        padding: 0 auto;
+        
+    }
+
+    
 }
