@@ -66,7 +66,7 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 .container {
-	width: 70%;
+	width: 90%;
 	margin: 20px 30px 20px 30px;
 }
 
@@ -321,10 +321,41 @@ ul {
 	padding: 5%;
 }
 
-@media(max-width: 800px) {
+#mobile-logo{
+    display: none;
+}
 
+@media(max-width: 800px) {
+    .circle {
+        display: none;
+    }
+
+    #mobile-logo {
+        display:flex;
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+        margin: 0 25px;
+    }
+
+    #desktop-logo {
+        display: none;
+    }
 }
 
 @media(max-width: 500px) {
-    
+    .circle {
+        display: none;
+    }
+
+    #desktop-logo {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
