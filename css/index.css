@@ -129,7 +129,7 @@ h1 {
 	justify-content: space-around;
 }
 
-.featuresAbout {
+#featuresAbout {
 	display: flex;
 	justify-content: space-around;
 }
@@ -157,14 +157,14 @@ h1 {
 	position: relative;
 }
 
-.bottom-section {
+#bottom-section {
 	display: flex;
 	justify-content: space-between;
 	border-bottom: 1px solid black;
 	align-content: center;
 }
 
-.bottom-section {
+#bottom-section {
 	padding-top: 1%;
 }
 
@@ -320,6 +320,7 @@ ul {
 	text-align: center;
 	padding: 5%;
 }
+/* end of CSS for Services page*/
 
 #mobile-logo{
     display: none;
@@ -386,8 +387,21 @@ ul {
     .button {
         margin: 8% 0 12% 18%;
         padding: 0 auto;
-        
+    }
+    
+    .bodyTxt {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0 auto;
     }
 
-    
+    .middleImg {
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
+    .contact {
+        margin-top: 5%;
+    }
 }
