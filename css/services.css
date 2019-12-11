@@ -65,11 +65,6 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
-.container {
-	width: 90%;
-	margin: 20px 30px 20px 30px;
-}
-
 nav {
 	display: flex;
 	align-items: row;
@@ -82,126 +77,6 @@ a {
 	margin-top: 1%;
 	margin-bottom: 2%;
 	text-decoration: none;
-}
-
-.innovation {
-	display: flex;
-	flex-flow: row, wrap;
-	justify-content: space-evenly;
-	align-items: center;
-	padding: 4%;
-	border-bottom: 1px solid black;
-}
-
-/*'innovation on demand' text*/
-h1 {
-	display: flex;
-	font-size: 80px;
-	text-align: center;
-	justify-content: space-around;
-	margin-left: 18%;
-	letter-spacing: 1%;
-}
-
-/*Circular Image*/
-.circle {
-	display: flex;
-	align-items: center;
-	margin-right: 10%;
-}
-
-/*'Get Started' Button*/
-.button {
-	width: 150px;
-	height: 30px;
-	text-align: center;
-	font-size: 16px;
-	border: 1px solid black;
-	margin-left: 32%;
-	padding: 5px 0;
-	margin-bottom: 0 auto;
-	align-items: center;
-}
-
-.topSection {
-	display: flex;
-	align-items: row;
-	justify-content: space-around;
-}
-
-#featuresAbout {
-	display: flex;
-	justify-content: space-around;
-}
-
-#features {
-	margin: 2%;
-	padding-right: 2%;
-	text-align: justify;
-}
-
-.about {
-	margin: 2%;
-	margin-bottom: 3%;
-	padding-left: 1%;
-	text-align: justify;
-}
-
-.middleImg {
-	display: flex;
-	justify-content: center;
-}
-
-.middle-img {
-	width: 97%;
-	position: relative;
-}
-
-#bottom-section {
-	display: flex;
-	justify-content: space-between;
-	border-bottom: 1px solid black;
-	align-content: center;
-}
-
-#bottom-section {
-	padding-top: 1%;
-}
-
-#services {
-	margin: 1%;
-	margin-top: 2%;
-	margin-bottom: 3%;
-	padding-left: 1%;
-	text-align: justify;
-}
-
-.product {
-	margin: 1%;
-	margin-top: 2%;
-	margin-bottom: 3%;
-	padding-left: 1%;
-	text-align: justify;
-}
-
-.vision {
-	margin: 1%;
-	margin-top: 2%;
-	margin-bottom: 3%;
-	padding-left: 1%;
-	text-align: justify;
-}
-
-.contact {
-	display: flex;
-	flex-direction: column;
-	margin: 2%;
-	margin-top: 3%;
-}
-
-footer {
-	text-align: center;
-	padding: 5%;
 }
 
 /* CSS for Services page*/
@@ -323,7 +198,7 @@ ul {
 }
 
 @media(max-width: 800px) {
-    .circle {
+    #desktop-logo{
         display: none;
     }
 
@@ -335,16 +210,39 @@ ul {
         margin: 0 25px;
     }
 
-    #desktop-logo {
-        display: none;
+    header {
+        border-top: 1px solid gray;
+        text-align: justify;
+        width: 90%;
+    }
+
+    header h2{
+        text-align: center;
+        padding: 2%;
+    }
+
+    .servicesBody {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-items: center;
+        padding: 5%;
+    }
+
+    ul {
+        text-align: center;
     }
 }
 
 @media(max-width: 500px) {
-    .circle {
-        display: none;
-    }
-
     #desktop-logo {
         display: none;
     }
@@ -375,30 +273,15 @@ ul {
         border-bottom: 1px solid grey;
     }
 
-    h1 {
-        font-size: 50px;
-        margin: 5% 0 2% 10%;
-    }
-
-    .button {
-        margin: 8% 0 12% 18%;
-        padding: 0 auto;
-    }
-    
-    .bodyTxt {
+    .servicesBody {
         display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        margin: 0 auto;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
     }
 
-    .middleImg {
-        padding-top: 2%;
-        padding-bottom: 2%;
-    }
-
-    .contact {
-        margin-top: 5%;
+    footer img {
+        width: 80%;
     }
 }
-/* End of CSS for responsive page*/
